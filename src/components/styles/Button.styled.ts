@@ -1,6 +1,11 @@
 import styled from "styled-components"
 
-export const Button = styled.button`
+interface Props {
+    bg?: string;
+    color?: string;
+}
+
+export const Button = styled.button<Props>`
     border-radius:50px;
     border: none;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -9,7 +14,7 @@ export const Button = styled.button`
     font-weight: 700;
     padding: 15px 60px;
     background-color: ${({ bg }) => bg || '#fff'};
-    color: ${({ color }) => color | '#333'};
+    color: ${({ color }) => color || '#333'};
 
     &:hover {
         opacity: 0.9;

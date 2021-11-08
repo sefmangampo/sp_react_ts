@@ -1,6 +1,14 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+interface Props {
+    theme: {
+        colors: {
+            body: string
+        }
+    }
+}
+
+const GlobalStyles = createGlobalStyle<Props>`
     @import url('https://fonts.goolgeapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
     *{

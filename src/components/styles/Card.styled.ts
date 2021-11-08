@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const StyledCard = styled.div`
+interface Props {
+  layout?: string;
+}
+
+export const StyledCard = styled.div<Props>`
   display: flex;
   align-items: center;
   background-color: #fff;
