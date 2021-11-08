@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
-import { Container } from "./components/styles/Container.styled";
-import GlobalStyles from "./components/styles/Global";
+
+import { Container, GlobalStyles } from "./components/styles"
 import Header from "./components/Header";
 
 const theme = {

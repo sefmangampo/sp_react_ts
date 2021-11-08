@@ -1,11 +1,13 @@
-import React from "react";
-import { StyledHeader } from "./styles/Header.styled";
-import { Container } from "./styles/Container.styled";
+
+import { StyledHeader, Container, Nav, Logo, Button } from "./styles"
 
 export default function Header() {
     return (<StyledHeader>
         <Container>
-            <h1>Huddle</h1>
+            <Nav>
+                <Logo src="./images/logo.svg" alt="" />
+                <Button>Try it Free</Button>
+            </Nav>
         </Container>
     </StyledHeader>);
 }
